@@ -18,6 +18,8 @@
 ## 測試方法
 
 - 透過 postMan 進行參數傳遞
+	- post : body -> x-www-form-urlencoded
+	- get  : Params
 - 在 app 中，放入此 api，可測試上傳參數的單元測試 
 
 ## gitignore
