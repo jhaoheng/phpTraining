@@ -15,6 +15,8 @@
 	- 參數
 	- ip位置
 
+![img1](fileEx.png)
+
 ## 測試方法
 
 - 透過 postMan 進行參數傳遞
