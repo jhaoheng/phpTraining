@@ -1,6 +1,7 @@
 <?php
-include 'query.php';
-
+// include 'query.php';
+include 'sqlite.php';
+// $db = sqlite_open('sqlite123.db');
 
 // echo "getSelectedGroup : ".PHP_EOL;
 // var_dump(getSelectedGroup($db));
