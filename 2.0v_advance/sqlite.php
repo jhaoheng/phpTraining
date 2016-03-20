@@ -1,8 +1,19 @@
 <?php
 
-function sqlite_open($location)
+
+
+function sqlite_open($db_file)
 {
-    $handle = new SQLite3($location);
+    if (!file_exists($db_file)) {
+        $handle = new SQLite3($db_file);
+        $handle->exec('CREATE TABLE keyGroups (id integer PRIMARY KEY AUTOINCREMENT NOT NULL,keySerial text(128),createDate text(128),updateDate text(128),updateIp text(128))');
+        $handle->exec('CREATE TABLE selectedGroup (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,KG_id integer(128))');
+        echo "sqlite.db create...";
+    }
+    else {
+        $handle = new SQLite3($db_file);
+        echo "sqlite.db already exist...";
+    }
     return $handle;
 }
 
