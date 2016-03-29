@@ -56,4 +56,6 @@ Temp-*/*
 - [ ] : 更新完畢的 keyName，會寫入為 sqlite
 	- 執行的 php receive 則從 sqlite 中取出參數
 
-
+- [ ] : 將 db 資料 list 給 html
+- [ ] : 似乎還是將 資料放入 CI 做 MVC 比較好...有 ctrl and view 的分開...會讓架構清楚些 
+- [ ] : 在設定 item 中，加入回傳值的反饋。 
